@@ -54,7 +54,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func youtubeButtonDidTap() {
-        let url = URL(string: "https://www.youtube.com/@DM-xe4gu")!
+        let url = URL(string: "https://www.youtube.com/@DM-xe4gu/videos")!
         UIApplication.shared.open(url, options: [:])
     }
 
