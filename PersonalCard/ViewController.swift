@@ -19,6 +19,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var telegramButton: UIButton!
     @IBOutlet weak var youtubeButton: UIButton!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
     @IBAction private func persInfoButtonDidTap() {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let secondVC = mainStoryboard.instantiateViewController(withIdentifier: "Personal InfoVC") as! ViewController
@@ -58,22 +62,4 @@ class ViewController: UIViewController {
         UIApplication.shared.open(url, options: [:])
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    func privateFunc() {
-    }
-
-    private func privateMethod() {
-    }
-}
-
-extension ViewController: SomeProtocol {
-}
-
-extension ViewController {
-}
-
-protocol SomeProtocol {
 }
