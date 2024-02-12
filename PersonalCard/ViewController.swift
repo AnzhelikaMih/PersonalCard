@@ -47,17 +47,17 @@ final class ViewController: UIViewController {
                 navigationController!.pushViewController(fifthVC, animated: true)
     }
     
-    @IBAction func instagramButtonDidTap() {
+    @IBAction private func instagramButtonDidTap() {
         let url = URL(string: "https://www.instagram.com/anzhelika_mihalchenia?igsh=YTQwZjQ0NmI0OA%3D%3D&utm_source=qr")!
         UIApplication.shared.open(url, options: [:])
     }
     
-    @IBAction func telegramButtonDidTap() {
+    @IBAction private func telegramButtonDidTap() {
         let url = URL(string: "https://t.me/talkToLika")!
         UIApplication.shared.open(url, options: [:])
     }
     
-    @IBAction func youtubeButtonDidTap() {
+    @IBAction private func youtubeButtonDidTap() {
         let url = URL(string: "https://www.youtube.com/@DM-xe4gu/videos")!
         UIApplication.shared.open(url, options: [:])
     }
